@@ -38,7 +38,7 @@ export class CourseListComponent implements OnInit {
       price: 0.99,
       code: 'ABC-111',
       duration: 120,
-      rating:4.9,
+      rating:4.7,
       releaseDate: '03/03/2021'
     },
     {
@@ -48,7 +48,7 @@ export class CourseListComponent implements OnInit {
       price: 0.99,
       code: 'ABC-222',
       duration: 90,
-      rating:4.5,
+      rating:5.0,
       releaseDate: '04/04/2021'
     },
     {
@@ -58,7 +58,7 @@ export class CourseListComponent implements OnInit {
       price: 0.99,
       code: 'ABC-333',
       duration: 90,
-      rating:4.2,
+      rating:4.4,
       releaseDate: '05/05/2021'
     }
 
