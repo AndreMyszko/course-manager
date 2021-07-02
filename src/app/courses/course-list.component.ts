@@ -10,7 +10,7 @@ export class CourseListComponent implements OnInit {
   filteredCourses: Course[] = [];
 
   _courses: Course[] = [];
-  _filterBy!: string;
+  _filterBy: string;
 
   constructor(private courseService: CourseService) { }
 

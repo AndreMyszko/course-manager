@@ -21,7 +21,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let course of filteredCourses">
-      <td><img [src]="course.imageUrl" width="32" height="32"></td>
+      <td><img [src]="course.imageUrl" width="32" height="32" alt="courseImg"></td>
       <td>{{course.name | uppercase}}</td>
       <td>{{course.price}}</td>
       <td>{{course.code | uppercase | replace: '-': ''}}</td>
