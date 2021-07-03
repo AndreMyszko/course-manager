@@ -6,13 +6,11 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { Error404Component } from './error-404/error-404.component';
-import { CoreModule } from './core/core.component';
+import { CoreModule } from './core/core.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    Error404Component,
   ],
   imports: [
     CourseModule,
@@ -24,9 +22,6 @@ import { CoreModule } from './core/core.component';
       {
         path: '', redirectTo: 'courses', pathMatch: 'full' //rota padrão
       },
-      {
-        path: '**', component: Error404Component //rota de erro (caso não encontre a rota)
-      }
     ])
   ],
   providers: [],
