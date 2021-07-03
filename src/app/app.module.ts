@@ -6,13 +6,12 @@ import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { Error404Component } from './error-404/error-404.component';
+import { CoreModule } from './core/core.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavBarComponent,
     Error404Component,
   ],
   imports: [
@@ -20,6 +19,7 @@ import { Error404Component } from './error-404/error-404.component';
     BrowserModule,
     FormsModule,
     HttpClientModule,
+    CoreModule,
     RouterModule.forRoot([
       {
         path: '', redirectTo: 'courses', pathMatch: 'full' //rota padrão
